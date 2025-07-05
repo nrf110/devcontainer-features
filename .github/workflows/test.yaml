@@ -15,7 +15,7 @@ jobs:
         features:
           - claude-code
         baseImage:
-          - nrf110/go-dind:latest
+          - mcr.microsoft.com/devcontainers/javascript-node
     steps:
       - uses: actions/checkout@v4
 

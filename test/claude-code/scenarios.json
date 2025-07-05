@@ -1,6 +1,6 @@
 {
   "custom_config_dir": {
-    "image": "nrf110/go-dind:latest",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node",
     "features": {
       "claude-code": {
         "config_dir": "/usr/local/.claude"
@@ -8,7 +8,7 @@
     }
   },
   "specific_version": {
-    "image": "nrf110/go-dind:latest",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node",
     "features": {
       "claude-code": {
         "version": "1.0.0"

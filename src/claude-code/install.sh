@@ -18,6 +18,11 @@ CONFIG_DIR=${CONFIG_DIR:-$_REMOTE_USER_HOME/.claude}
 echo "Creating Claude Code config directory at $CONFIG_DIR"
 mkdir -p $CONFIG_DIR && chown -R $_REMOTE_USER:$_REMOTE_USER $CONFIG_DIR
 
-echo "Installing Claude Code"
-
+tee "/usr/local/share/claude-code.sh" > /dev/null \
+<< EOF
+#!/bin/bash
+set -e
 npm i -g @anthropic-ai/claude-code@$VERSION
+EOF
+
+chmod +x /usr/local/share/claude-code.sh

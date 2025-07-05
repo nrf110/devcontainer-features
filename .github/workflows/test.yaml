@@ -13,12 +13,9 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - claude-code
         baseImage:
-          - debian:latest
-          - ubuntu:latest
-          - mcr.microsoft.com/devcontainers/base:ubuntu
+          - nrf110/go-dind:latest
     steps:
       - uses: actions/checkout@v4
 
@@ -34,8 +31,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - claude-code
     steps:
       - uses: actions/checkout@v4
 

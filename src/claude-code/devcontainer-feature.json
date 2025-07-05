@@ -1,6 +1,6 @@
 {
   "name": "Claude Code",
-  "id": "claudecode",
+  "id": "claude-code",
   "version": "1.0.0",
   "description": "Installs Claude Code packages",
   "options": {
@@ -17,5 +17,6 @@
       "description": "Directory that will be created to store Claude Code config files.  Defaults to /home/${remoteUser}/.claude",
       "default": ""
     }
-  }
+  },
+  "postCreateCommand": "/usr/local/share/claude-code.sh"
 }

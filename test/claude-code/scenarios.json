@@ -1,0 +1,18 @@
+{
+  "custom_config_dir": {
+    "image": "nrf110/go-dind:latest",
+    "features": {
+      "claude-code": {
+        "config_dir": "/usr/local/.claude"
+      }
+    }
+  },
+  "specific_version": {
+    "image": "nrf110/go-dind:latest",
+    "features": {
+      "claude-code": {
+        "version": "1.0.0"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Claude Code",
+  "id": "claudecode",
+  "version": "1.0.0",
+  "description": "Installs Claude Code packages",
+  "options": {
+    "version": {
+      "type": "string",
+      "description": "Specific version of the @anthropic-ai/claude-code package to use",
+      "proposals": [
+        "latest"
+      ],
+      "default": "latest"
+    },
+    "config_dir": {
+      "type": "string",
+      "description": "Directory that will be created to store Claude Code config files.  Defaults to /home/${remoteUser}/.claude",
+      "default": ""
+    }
+  }
+}

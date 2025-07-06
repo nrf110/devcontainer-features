@@ -1,0 +1,62 @@
+{
+  "name": "(Claude Code) Elasticsearch MCP Server",
+  "id": "claude-mcp-elasticsearch",
+  "version": "1.0.0",
+  "description": "Configures an Elasticsearch MCP server for Claude Code",
+  "options": {
+    "version": {
+      "type": "string",
+      "description": "Specific version of the @elastic/mcp-server-elasticsearch package to use",
+      "default": "latest"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the server in the MCP config",
+      "default": "elasticsearch"
+    },
+    "es_url": {
+      "type": "string",
+      "description": "URL for the Elasticsearch server",
+      "default": "http://localhost:9200"
+    },
+    "es_api_key": {
+      "type": "string",
+      "description": "API key for the Elasticsearch server",
+      "default": ""
+    },
+    "es_username": {
+      "type": "string",
+      "description": "Username for the Elasticsearch server",
+      "default": ""
+    },
+    "es_password": {
+      "type": "string",
+      "description": "Password for the Elasticsearch server",
+      "default": ""
+    },
+    "es_ca_cert": {
+      "type": "string",
+      "description": "Path to the CA certificate for Elasticsearch SSL/TLS",
+      "default": ""
+    },
+    "es_path_prefix": {
+      "type": "string",
+      "description": "Path prefix for the Elasticsearch server",
+      "default": ""
+    },
+    "es_version": {
+      "type": "string",
+      "description": "Version of the Elasticsearch server",
+      "default": "9"
+    },
+    "otel_log_level": {
+      "type": "string",
+      "description": "OTel log level",
+      "default": "none"
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/nrf110/devcontainer-features/claude-code"
+  ],
+  "postCreateCommand": "/usr/local/share/claude-mcp-elasticsearch.sh"
+}

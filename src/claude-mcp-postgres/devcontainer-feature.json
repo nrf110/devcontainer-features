@@ -1,0 +1,52 @@
+{
+  "name": "(Claude Code) Postgres MCP Server",
+  "id": "claude-mcp-postgres",
+  "version": "1.0.0",
+  "description": "Configures a Postgres MCP server for Claude Code",
+  "options": {
+    "version": {
+      "type": "string",
+      "description": "Specific version of the postgres-mcp-server package to use",
+      "default": "latest"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the server in the MCP config",
+      "default": "postgres"
+    },
+    "db_host": {
+      "type": "string",
+      "description": "Hostname for the Postgres connection",
+      "default": "localhost"
+    },
+    "db_port": {
+      "type": "string",
+      "description": "Port for the Postgres connection",
+      "default": "5432"
+    },
+    "db_name": {
+      "type": "string",
+      "description": "Database name for the Postgres connection",
+      "default": "postgres"
+    },
+    "db_user": {
+      "type": "string",
+      "description": "Username for the Postgres connection",
+      "default": "postgres"
+    },
+    "db_password": {
+      "type": "string",
+      "description": "Password for the Postgres connection",
+      "default": "postgres"
+    },
+    "db_ssl": {
+      "type": "boolean",
+      "description": "Use SSL for the Postgres connection",
+      "default": true
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/nrf110/devcontainer-features/claude-code"
+  ],
+  "postCreateCommand": "/usr/local/share/claude-mcp-postgres.sh"
+}

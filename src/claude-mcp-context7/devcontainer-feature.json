@@ -1,0 +1,22 @@
+{
+  "name": "(Claude Code) Context7 MCP Server",
+  "id": "claude-mcp-context7",
+  "version": "1.0.0",
+  "description": "Configures a Context7 MCP server for Claude Code",
+  "options": {
+    "name": {
+      "type": "string",
+      "description": "Name of the server in the MCP config",
+      "default": "context7"
+    },
+    "url": {
+      "type": "string",
+      "description": "URL for the Context7 server",
+      "default": "https://mcp.context7.com/mcp"
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/nrf110/devcontainer-features/claude-code"
+  ],
+  "postCreateCommand": "/usr/local/share/claude-mcp-context7.sh"
+}

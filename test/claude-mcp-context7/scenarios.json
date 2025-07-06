@@ -1,0 +1,9 @@
+{
+  "defaults": {
+    "image": "mcr.microsoft.com/devcontainers/javascript-node",
+    "features": {
+      "claude-code": {},
+      "claude-mcp-context7": {}
+    }
+  }
+}

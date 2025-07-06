@@ -1,0 +1,27 @@
+{
+  "name": "(Claude Code) Github MCP Server",
+  "id": "claude-mcp-github",
+  "version": "1.0.0",
+  "description": "Configures a Github MCP server for Claude Code",
+  "options": {
+    "name": {
+      "type": "string",
+      "description": "Name of the server in the MCP config",
+      "default": "github"
+    },
+    "url": {
+      "type": "string",
+      "description": "URL for the Github server",
+      "default": "https://api.githubcopilot.com/mcp"
+    },
+    "github_personal_access_token": {
+      "type": "string",
+      "description": "Personal access token for the Github server",
+      "default": ""
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/nrf110/devcontainer-features/claude-code"
+  ],
+  "postCreateCommand": "/usr/local/share/claude-mcp-github.sh"
+}

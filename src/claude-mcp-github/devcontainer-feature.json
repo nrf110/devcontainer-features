@@ -1,7 +1,7 @@
 {
   "name": "(Claude Code) Github MCP Server",
   "id": "claude-mcp-github",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Configures a Github MCP server for Claude Code",
   "options": {
     "name": {

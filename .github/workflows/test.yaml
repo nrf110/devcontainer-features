@@ -35,6 +35,10 @@ jobs:
           - claude-code
           - claude-mcp-postgres
           - claude-mcp-elasticsearch
+          - claude-mcp-playwright
+          - claude-mcp-terraform
+          - claude-mcp-context7
+          - claude-mcp-github
     steps:
       - uses: actions/checkout@v4
 

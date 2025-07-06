@@ -1,0 +1,10 @@
+{
+  "defaults": {
+    "image": "mcr.microsoft.com/devcontainers/javascript-node",
+    "features": {
+      "ghcr.io/devcontainers/features/go:1": {},
+      "claude-code": {},
+      "claude-mcp-terraform": {}
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "(Claude Code) Terraform MCP Server",
+  "id": "claude-mcp-terraform",
+  "version": "1.0.0",
+  "description": "Configures a Terraform MCP server for Claude Code",
+  "options": {
+    "name": {
+      "type": "string",
+      "description": "Name of the server in the MCP config",
+      "default": "terraform"
+    },
+    "version": {
+      "type": "string",
+      "description": "Specific version of terraform-mcp-server to use",
+      "default": "latest"
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/go",
+    "ghcr.io/nrf110/devcontainer-features/claude-code"
+  ],
+  "postCreateCommand": "/usr/local/share/claude-mcp-terraform.sh"
+}

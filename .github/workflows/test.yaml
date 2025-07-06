@@ -35,7 +35,6 @@ jobs:
           - claude-code
           - claude-mcp-postgres
           - claude-mcp-elasticsearch
-          - playwright
     steps:
       - uses: actions/checkout@v4
 

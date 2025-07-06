@@ -1,0 +1,10 @@
+{
+  "defaults": {
+    "image": "mcr.microsoft.com/devcontainers/javascript-node",
+    "features": {
+      "claude-code": {},
+      "playwright": {},
+      "claude-mcp-playwright": {}
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "(Claude Code) Playwright MCP Server",
+  "id": "claude-mcp-playwright",
+  "version": "1.0.0",
+  "description": "Configures a Playwright MCP server for Claude Code",
+  "options": {
+    "version": {
+      "type": "string",
+      "description": "Specific version of the @playwright/mcp package to use",
+      "default": "latest"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the server in the MCP config",
+      "default": "playwright"
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/nrf110/devcontainer-features/claude-code",
+    "ghcr.io/nrf110/devcontainer-features/playwright"
+  ],
+  "postCreateCommand": "/usr/local/share/claude-mcp-playwright.sh"
+}

@@ -19,5 +19,5 @@
     "ghcr.io/nrf110/devcontainer-features/claude-code",
     "ghcr.io/nrf110/devcontainer-features/playwright"
   ],
-  "postCreateCommand": "/usr/local/share/claude-mcp-playwright.sh"
+  "postAttachCommand": "/usr/local/share/claude-mcp-playwright.sh"
 }

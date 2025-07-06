@@ -58,5 +58,5 @@
   "installsAfter": [
     "ghcr.io/nrf110/devcontainer-features/claude-code"
   ],
-  "postCreateCommand": "/usr/local/share/claude-mcp-elasticsearch.sh"
+  "postAttachCommand": "/usr/local/share/claude-mcp-elasticsearch.sh"
 }

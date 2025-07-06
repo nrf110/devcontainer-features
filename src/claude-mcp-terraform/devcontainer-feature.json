@@ -19,5 +19,5 @@
     "ghcr.io/devcontainers/features/go",
     "ghcr.io/nrf110/devcontainer-features/claude-code"
   ],
-  "postCreateCommand": "/usr/local/share/claude-mcp-terraform.sh"
+  "postAttachCommand": "/usr/local/share/claude-mcp-terraform.sh"
 }

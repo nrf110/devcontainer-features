@@ -18,5 +18,5 @@
       "default": ""
     }
   },
-  "postCreateCommand": "/usr/local/share/claude-code.sh"
+  "postAttachCommand": "/usr/local/share/claude-code.sh"
 }
